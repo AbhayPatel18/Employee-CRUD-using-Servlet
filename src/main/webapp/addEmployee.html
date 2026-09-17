@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Add Employee</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="card">
+    <h2>Add Employee</h2>
+    <form action="employee" method="post">
+        <input type="hidden" name="action" value="add">
+
+        <label>Name</label>
+        <input type="text" name="name" required>
+
+        <label>Salary</label>
+        <input type="number" name="salary" step="0.01" required>
+
+        <label>Department</label>
+        <select name="department" required>
+            <option value="" disabled selected>Select department</option>
+            <option value="HR">HR</option>
+            <option value="IT">IT</option>
+            <option value="Finance">Finance</option>
+            <option value="Sales">Sales</option>
+            <option value="Marketing">Marketing</option>
+            <option value="Operations">Operations</option>
+        </select>
+
+        <label>City</label>
+        <input type="text" name="city">
+
+        <label>Mobile</label>
+        <input type="text" name="mobileNumber">
+
+        <label>Email</label>
+        <input type="email" name="email">
+
+        <label>Age</label>
+        <input type="number" name="age">
+
+        <div class="actions">
+            <button type="submit">Save</button>
+            <a href="index.html" class="btn grey">Cancel</a>
+        </div>
+    </form>
+</div>
+</body>
+</html>
